@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Comprehensive Web Page </title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, section, footer {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        header {
+            background-color: #4a6fa5;
+            color: white;
+            text-align: center;
+        }
+        section {
+            background-color: #f8f9fa;
+            border-left: 5px solid #4a6fa5;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4a6fa5;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        video, audio {
+            width: 100%;
+            margin: 20px 0;
+        }
+        form {
+            background-color: #e9ecef;
+            padding: 25px;
+            border-radius: 5px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #3a5a80;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .inline-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .required:after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Comprehensive Web Page</h1>
+        <p>Showcasing HTML5 elements and features</p>
+    </header>
+
+    <!-- Lists Section -->
+    <section id="lists">
+        <h2>Lists Section</h2>
+        
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 48%;">
+                <h3>Unordered List (Features)</h3>
+                <ul>
+                    <li>Responsive design</li>
+                    <li>HTML5 semantic elements</li>
+                    <li>Accessibility features</li>
+                    <li>Form validation</li>
+                    <li>Media integration</li>
+                </ul>
+            </div>
+            
+            <div style="width: 48%;">
+                <h3>Ordered List (Steps)</h3>
+                <ol>
+                    <li>Review the content</li>
+                    <li>Complete the form</li>
+                    <li>Submit your information</li>
+                    <li>Receive confirmation</li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3>Description List (Terminology)</h3>
+        <dl>
+            <dt>HTML5</dt>
+            <dd>The latest version of HyperText Markup Language</dd>
+            
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets for presentation</dd>
+            
+            <dt>JavaScript</dt>
+            <dd>Programming language for interactivity</dd>
+        </dl>
+    </section>
+
+    <!-- Tables Section -->
+    <section id="tables">
+        <h2>Tables Section</h2>
+        
+        <h3>Product Comparison</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Basic Plan</th>
+                    <th>Standard Plan</th>
+                    <th>Premium Plan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Storage</td>
+                    <td>5GB</td>
+                    <td>20GB</td>
+                    <td>100GB</td>
+                </tr>
+                <tr>
+                    <td>Users</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>Support</td>
+                    <td>Email only</td>
+                    <td>Email + Chat</td>
+                    <td>24/7 Phone Support</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>$9.99/month</td>
+                    <td>$29.99/month</td>
+                    <td>$99.99/month</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Schedule</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Wednesday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>Meeting</td>
+                    <td>Workshop</td>
+                    <td>Review</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Development</td>
+                    <td>Development</td>
+                    <td>Planning</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM</td>
+                    <td>Testing</td>
+                    <td>Client Call</td>
+                    <td>Testing</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h2>Media Section</h2>
+        
+        <h3>Images</h3>
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <img src="https://via.placeholder.com/300x200?text=Nature" alt="Nature placeholder" style="width: 48%; margin-bottom: 15px;">
+            <img src="https://via.placeholder.com/300x200?text=Technology" alt="Technology placeholder" style="width: 48%; margin-bottom: 15px;">
+        </div>
+        
+        <h3>Video</h3>
+        <video controls poster="https://via.placeholder.com/800x450?text=Video+Placeholder">
+            <source src="sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form">
+        <h2>Registration Form</h2>
+        
+        <form id="registration" action="/submit" method="post" novalidate>
+            <fieldset>
+                <legend><span class="required">Personal Information</span></legend>
+                
+                <div class="form-group">
+                    <label for="fullname" class="required">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="required">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                    <small>Format: 123-456-7890</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dob" class="required">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required max="2020-01-01">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="required">Password</label>
+                    <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters">
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password" class="required">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-enter your password">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <div class="form-group">
+                    <label for="bio">Short Biography</label>
+                    <textarea id="bio" name="bio" rows="4" maxlength="500" placeholder="Tell us about yourself (max 500 characters)"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="">Select a country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Interests (Select at least one)</label>
+                    <div class="inline-group">
+                        <input type="checkbox" id="interest-tech" name="interests" value="technology">
+                        <label for="interest-tech" style="display: inline;">Technology</label>
+                    </div>
+                    <div class="inline-group">
+                        <input type="checkbox" id="interest-sports" name="interests" value="sports">
+                        <label for="interest-sports" style="display: inline;">Sports</label>
+                    </div>
+                    <div class="inline-group">
+                        <input type="checkbox" id="interest-art" name="interests" value="art">
+                        <label for="interest-art" style="display: inline;">Art</label>
+                    </div>
+                    <div class="inline-group">
+                        <input type="checkbox" id="interest-music" name="interests" value="music">
+                        <label for="interest-music" style="display: inline;">Music</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Preferred Contact Method</label>
+                    <div class="inline-group">
+                        <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                        <label for="contact-email" style="display: inline;">Email</label>
+                    </div>
+                    <div class="inline-group">
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        <label for="contact-phone" style="display: inline;">Phone</label>
+                    </div>
+                    <div class="inline-group">
+                        <input type="radio" id="contact-mail" name="contact-method" value="mail">
+                        <label for="contact-mail" style="display: inline;">Mail</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="website">Website (optional)</label>
+                    <input type="url" id="website" name="website" placeholder="https://example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="profile-pic">Profile Picture</label>
+                    <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <div class="form-group">
+                    <label for="theme">Theme Color</label>
+                    <input type="color" id="theme" name="theme" value="#4a6fa5">
+                </div>
+                
+                <div class="form-group">
+                    <label for="volume">Notification Volume</label>
+                    <input type="range" id="volume" name="volume" min="0" max="100" step="10" value="50">
+                </div>
+            </fieldset>
+            
+            <div class="form-group">
+                <div class="inline-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms" class="required">I agree to the terms and conditions</label>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between;">
+                <button type="submit">Submit Registration</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Comprehensive Web Page By Shadrack. All rights reserved.</p>
+    </footer>
+</body>
+</html>
